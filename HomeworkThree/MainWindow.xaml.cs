@@ -32,11 +32,11 @@ namespace WpfApp1
             this.cost = cost;
         }
 
-        //public override string ToString()
-        //{
+        public override string ToString()
+        {
 
-        //    return this.name;
-        //}
+            return this.name;
+        }
     }
 
     public partial class MainWindow : Window
