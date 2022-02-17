@@ -62,22 +62,14 @@ namespace taskTwo
             return message;
         }
 
-
-
-
-
-
-        // keeps the display list in horizontal proper order
+        // automatically 
         public override string ToString()
         {
-            return ("Customer: " + CustomerID + " " + SaleDate);
+            string formatAllOrder = "Customer: " + CustomerID + " " + SaleDate;
 
+
+            return formatAllOrder;
         }
-
-
-
-
-
     }
     public partial class MainWindow : Window
     {
@@ -90,8 +82,7 @@ namespace taskTwo
 
             InitializeComponent();
 
-            // attach the listbox to a list to be displayed
-            
+            // binds automatically toString() 
             this.allOrdersListBox.ItemsSource = receiptList;
 
         }
@@ -113,18 +104,15 @@ namespace taskTwo
 
             /*
              *Prints name verticaly
+             * TESING
              */
 
 
-            // to.String override to print the needed output instead of the list name
-            allOrdersListBox.ItemsSource = receiptList.ToString();
-            
-
-
-
             // need to refresh everytime to make new entries popup
-            allOrdersListBox.Items.Refresh();
+            this.allOrdersListBox.Items.Refresh();
+
         }
+
 
         private void mouseClickShowReceipt(object sender, MouseButtonEventArgs e)
         {

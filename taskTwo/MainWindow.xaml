@@ -24,7 +24,9 @@
         
         <Button x:Name="addCustomerButton" Content="Add" Canvas.Left="305" Canvas.Top="238" Width="50" Click="addButtonClicked"/>
 
-        <ListBox x:Name="allOrdersListBox" Height="176" Width="197" Canvas.Left="460" Canvas.Top="92" MouseDoubleClick="mouseClickShowReceipt"/>
+        <ListBox x:Name="allOrdersListBox" Height="176" Width="197" Canvas.Left="460" Canvas.Top="92" MouseDoubleClick="mouseClickShowReceipt">
+
+        </ListBox>
 
         <TextBox x:Name="receiptTextBox" Height="113" Width="278" Canvas.Left="102" Canvas.Top="269" IsEnabled="False"/>
 
